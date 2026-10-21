@@ -23,3 +23,9 @@
 .exercise .hero{height:370px}
 .exercise .hero .course-marker{left:79%;top:35%;width:13%;height:35%;margin:0}
 }
+
+/* Keep every branch and the marker visible on any screen. */
+.exercise .hero:has(.junction-scene){height:auto;aspect-ratio:3/2;align-self:start}
+.exercise .junction-scene .scene-image{object-fit:fill;object-position:center}
+.exercise .hero .junction-scene .course-marker{left:75%;top:36%;width:7%;height:25%;margin:0}
+.exercise .hero .junction-blue .course-marker{left:55%;top:16%;width:6%;height:21%;margin:0}
